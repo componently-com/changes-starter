@@ -12,6 +12,7 @@ const Widget = () => {
       key: "IK-jFLnip_HY-72CQf4H3cr",
       element: ref.current
     });
+    wg.toggle();
 
     return () => {
       wg.remove();
