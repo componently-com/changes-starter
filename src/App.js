@@ -3,8 +3,8 @@ import ChangelogWidget from "changelog-widget";
 import ChangelogSidebar from "changelog-sidebar";
 
 const sidebar = new ChangelogSidebar({
-  key: "IK-jFLnip_HY-72CQf4H3cr",
-  id: "DnVDiFOFE"
+  key: "",
+  id: ""
 });
 
 const SideBar = () => {
