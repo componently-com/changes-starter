@@ -1,23 +1,5 @@
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef } from "react";
 import ChangelogWidget from "changelog-widget";
-import ChangelogSidebar from "changelog-sidebar";
-
-const sidebar = new ChangelogSidebar({
-  id: "PROJECT_ID",
-  key: "INTEGRATION_KEY"
-});
-
-const SideBar = () => {
-  const toggleChangelog = useCallback(() => {
-    sidebar.toggle();
-  }, []);
-
-  return (
-    <div>
-      <button onClick={toggleChangelog}>Toggle Sidebar</button>
-    </div>
-  );
-};
 
 const Widget = () => {
   let ref = useRef();
@@ -26,8 +8,8 @@ const Widget = () => {
     if (!ref.current) return;
 
     let wg = new ChangelogWidget({
-      id: "PROJECT_ID",
-      key: "INTEGRATION_KEY",
+      id: "bBqkizOw_",
+      key: "IK-qOU1AGLD5-_bXF3JsB7S",
       element: ref.current
     });
     wg.toggle();
@@ -48,7 +30,6 @@ export default function App() {
   return (
     <div className="App">
       <Widget />
-      <SideBar />
     </div>
   );
 }
