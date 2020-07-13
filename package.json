@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "changes-starter",
   "version": "1.0.0",
   "description": "Changes Starter",
   "keywords": [
@@ -8,7 +8,6 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "changelog-sidebar": "0.0.4-beta",
     "changelog-widget": "0.0.7-beta",
     "react": "16.12.0",
     "react-dom": "16.12.0",

@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef } from "react";
 import ChangelogWidget from "changelog-widget";
+<<<<<<< HEAD
 import ChangelogSidebar from "changelog-sidebar";
 
 const sidebar = new ChangelogSidebar({
@@ -18,18 +19,21 @@ const SideBar = () => {
     </div>
   );
 };
+=======
+>>>>>>> b3bec75f172c2422a7bfdb796dfae711ca59cc32
 
 const Widget = () => {
-  let buttonRef = useRef();
+  let ref = useRef();
 
   useEffect(() => {
-    if (!buttonRef.current) return;
+    if (!ref.current) return;
 
     let wg = new ChangelogWidget({
       id: "DnVDiFOFE",
       key: "IK-jFLnip_HY-72CQf4H3cr",
-      element: buttonRef.current
+      element: ref.current
     });
+    wg.toggle();
 
     return () => {
       wg.remove();
@@ -37,8 +41,8 @@ const Widget = () => {
   }, []);
 
   return (
-    <div>
-      <button ref={buttonRef}>Toggle widget</button>
+    <div ref={ref}>
+      <button>Toggle widget</button>
     </div>
   );
 };
@@ -47,7 +51,6 @@ export default function App() {
   return (
     <div className="App">
       <Widget />
-      <SideBar />
     </div>
   );
 }
