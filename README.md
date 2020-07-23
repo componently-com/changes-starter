@@ -1,5 +1,7 @@
 # Changes React Change log Starter
 
+#### Try it: https://codesandbox.io/s/github/componently-com/changes-starter
+
 ## Prerequesities
 1. Sign up to [Changes](https://changes.blue/).
 2. Create a new project.
@@ -8,5 +10,5 @@
 
 ```
 npm install
-npm run start
+npm start
 ```
